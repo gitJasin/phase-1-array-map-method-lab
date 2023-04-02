@@ -42,7 +42,7 @@ const titleCased = (arrayToTitleCase) => {
   })
   }
 
-console.log(titleCased(tutorials))
+// console.log(titleCased(tutorials))
 
 
 //This also works but also does not pass the npm test...

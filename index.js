@@ -23,6 +23,7 @@ const tutorials = [
 
 // capitalizeFirstLetter("funkytown")
 
+// makes first letter of each word in array capital. splits sentence into words, capitalizes, then joins them back up
 // const titleCaseString = (str) => {
 //   return str.split(' ').map(function (word) {
 //     return (word[0].toUpperCase() + word.slice(1))
@@ -33,9 +34,10 @@ const tutorials = [
 
 //that works! Now need to iterate through an array of strings executing toTitleCase funciton on each string in the array. Will .map work?
 
-// This works but does not pass the npm test .... no idea why...
-const titleCased = (arrayToTitleCase) => {
-  return arrayToTitleCase.map(function (str) {
+// This works!!! I had to de-generalize this function, so got rid of the argument and just have it return 
+// tutorials.map...... rather than have it use a general arg for any arrray input
+const titleCased = () => {
+  return tutorials.map(function (str) {
     return str.split(' ').map(function (word) {
       return (word[0].toUpperCase() + word.slice(1))
     }).join(' ')
